@@ -29,6 +29,7 @@
 		}
 
 		function getArticle(articleId) {
+			// TODO: Fetch and display a particular article
 			var article = {};
 			return article;
 		}
