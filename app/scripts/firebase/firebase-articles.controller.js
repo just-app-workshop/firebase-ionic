@@ -22,10 +22,10 @@
 		// ********************************************************************
 
 		function getArticles() {
-			// firebaseService.getArticles()
-				// .then(function(articles) {
-				// 	vm.articles = articles;
-				// });
+			firebaseService.getArticles()
+				.then(function(articles) {
+					vm.articles = articles;
+				});
 		}
 
 		function navigate(articleId) {

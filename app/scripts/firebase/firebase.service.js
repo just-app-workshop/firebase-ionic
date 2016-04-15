@@ -3,12 +3,17 @@
 
 	angular
 		.module('supermodular.firebase')
+		// DB service
+		.factory('db', [function() {
+			return new Firebase('https://business-directory.firebaseio.com/')
+		}])
+		// Firebase service
 		.factory('firebaseService', firebaseService);
 
-	firebaseService.$inject = [];
+	firebaseService.$inject = ['db', '$firebaseArray', '$firebaseObject'];
 
 	/* @ngInject */
-	function firebaseService() {
+	function firebaseService(db, $firebaseArray, $firebaseObject) {
 
 		var service = {
 			getArticles: getArticles,
@@ -19,13 +24,23 @@
 		////////////////
 
 		function getArticles() {
-			var articles = [];
-			return articles;
+			var query = db.child('news');
+			return $firebaseArray(query).$loaded().then(initArray);
 		}
 
 		function getArticle(articleId) {
 			var article = {};
 			return article;
+		}
+
+		function initItem(item) {
+			return angular.extend({}, item, {
+				guid: item.$id
+			});
+		}
+
+		function initArray(array) {
+			return _.map(array, initItem);
 		}
 	}
 })();

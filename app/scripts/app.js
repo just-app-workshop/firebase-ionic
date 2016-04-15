@@ -10,6 +10,7 @@ angular.module('starter', [
 	'config',
 	'ionic.service.core',
 	'ionic.service.push',
+	'firebase',
 	'supermodular.common',
 	'supermodular.home',
 	'supermodular.map',
