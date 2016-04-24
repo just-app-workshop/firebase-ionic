@@ -31,6 +31,8 @@
 		function getArticle(articleId) {
 			// TODO: Fetch and display a particular article
 			var article = {};
+			//var query = db.child('news');
+			//return $firebaseArray(query).$loaded().then(initArray);
 			return article;
 		}
 
