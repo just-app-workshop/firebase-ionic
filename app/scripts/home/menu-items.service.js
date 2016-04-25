@@ -17,7 +17,11 @@
 			title: 'Wordpress',
 			path: 'wordpress-articles',
 			icon: 'ion-social-wordpress'
-		}, {
+		},{
+			title: 'Firebase',
+			path: 'firebase-articles',
+			icon: 'ion-social-firebase'
+		},{
 			title: 'Elements',
 			path: 'elements',
 			icon: 'ion-android-checkbox-outline'
