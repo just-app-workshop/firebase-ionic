@@ -9,7 +9,7 @@
 	
 	/* @ngInject */
 	function FirebaseArticleController($stateParams, firebaseService) {
-		var articleId = $stateParams.articleId;
+		var guid = $stateParams.guid;
 		
 		var vm = angular.extend(this, {
 			article: null,
@@ -23,7 +23,7 @@
 		// ********************************************************************
 		
 		function loadArticle() {
-			firebaseService.getArticle(articleId)
+			firebaseService.getArticle(guid)
 			.then(function(article) {
 				vm.article = article;
 			});

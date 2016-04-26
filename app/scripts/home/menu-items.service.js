@@ -20,7 +20,7 @@
 		},{
 			title: 'Firebase',
 			path: 'firebase-articles',
-			icon: 'ion-social-firebase'
+			icon: 'ion-android-globe'
 		},{
 			title: 'Elements',
 			path: 'elements',

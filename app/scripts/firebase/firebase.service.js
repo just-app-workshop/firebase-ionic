@@ -28,11 +28,10 @@
 			return $firebaseArray(query).$loaded().then(initArray);
 		}
 		
-		function getArticle(articleId) {
+		function getArticle(guid) {
 			// TODO: Fetch and display a particular article
 			var article = {};
-			console.log('artice id is '+articleId);
-			var query = db.child('news/'+articleId);
+			var query = db.child('news/'+guid);
 			return $firebaseObject(query).$loaded();
 		}
 		

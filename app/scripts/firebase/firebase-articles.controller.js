@@ -28,8 +28,8 @@
 			});
 		}
 		
-		function navigate(articleId) {
-			$state.go('app.firebase-article', { articleId: articleId });
+		function navigate(guid) {
+			$state.go('app.firebase-article', { guid: guid });
 		}
 	}
 })();

@@ -18,7 +18,7 @@
 					}
 				})
 				.state('app.firebase-article', {
-					url: '/firebase-articles/:articleId',
+					url: '/firebase-articles/:guid',
 					views: {
 						'menuContent': {
 							templateUrl: 'scripts/firebase/firebase-article.html',
