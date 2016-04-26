@@ -50,11 +50,9 @@
   },
   "scripts": {
     "test": "grunt test",
-    "//": "Post installation.",
-    "//": "Uncomment the next line to enable post install script.",
-    "//": "There is always the option to run it manually.",
-    "//": { "postinstall": "./install.sh" },
-    "//": { "postinstall": "./install.bat" }
+    "//": {
+      "postinstall": "./install.bat"
+    }
   },
   "cordovaPlatforms": [],
   "cordovaPlugins": [
@@ -73,6 +71,7 @@
     },
     "cordova-plugin-network-information",
     "cordova-plugin-whitelist",
-    "cordova-plugin-transport-security"
+    "cordova-plugin-transport-security",
+    "cordova-plugin-inappbrowser"
   ]
 }

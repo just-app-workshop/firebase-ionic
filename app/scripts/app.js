@@ -15,6 +15,7 @@ angular.module('starter', [
 	'supermodular.home',
 	'supermodular.map',
 	'supermodular.wordpress',
+	'supermodular.firebase',
 	'supermodular.menu',
 	'supermodular.elements',
 	'supermodular.popover-menu',
